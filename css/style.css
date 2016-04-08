@@ -23,13 +23,20 @@ p {
 .row-content {
   max-width: 1060px;
   margin: auto;
+  overflow: auto;
+  padding: 30px 10px 30px 10px;
+}
+
+.row-content h2 {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 header h1 {
-  max-width: 150px;
+  max-width: 210px;
   text-align: center;
   margin: auto;
+  padding: 15px;
 }
 
 #about {
@@ -37,8 +44,10 @@ header h1 {
 }
 
 #about img {
-  max-width: 200px;
+  max-width: 250px;
   border-radius: 150px;
+  float: left;
+  margin-right: 50px;
 }
 
 #order {
@@ -55,4 +64,8 @@ header h1 {
 
 footer {
   background-color: #FC8B8B;
+}
+
+footer p {
+  text-align: center;
 }
