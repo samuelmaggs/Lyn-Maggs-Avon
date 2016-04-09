@@ -2,6 +2,30 @@
   width: 100%;
 }
 
+form {
+  width: 100%;
+}
+
+input[type=submit] {
+  background: #E30093;
+  border: solid 2px #333;
+  padding: 10px;
+  color: #fff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+}
+
+.error {
+  box-shadow: inset 0 0 10px #000000;
+  background: rgba(255, 0, 0, 0.4);
+  padding: 5px;
+  border: solid 2px red;
+}
+
 body {
   font-family: 'Metrophobic', Arial, serif;
   font-weight: 400;
@@ -57,7 +81,6 @@ header h1 {
 }
 
 #about img {
-  max-width: 100%;
   border-radius: 150px;
   margin-top: 70px;
 }
@@ -81,9 +104,17 @@ header h1 {
   padding-top: 100px;
 }
 
+#about img {
+  width: 100%;
+}
+
 #order {
   background-color: #E30093;
   color: #fff;
+}
+
+#order img {
+  width: 100%;
 }
 
 #order h2 {
@@ -109,12 +140,23 @@ header h1 {
   left: 0;
 }
 
-#order img {
-  width: 100%;
-}
-
 #contact {
   background-color: #FFE2FB;
+}
+
+#contact h2 {
+  font-size: 90px;
+  border-bottom: solid 8px;
+}
+
+#contact .right {
+  width: 60%;
+  float: right;
+}
+
+#contact .left {
+  width: 30%;
+  float: left;
 }
 
 footer {

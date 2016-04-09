@@ -10,6 +10,26 @@ $greytext: #333
 .main-content
   width: 100%
 
+form
+  width: 100%
+
+input[type=submit]
+  background: $avonpink
+  border: solid 2px $greytext
+  padding: 10px
+  color: #fff
+
+input, textarea
+  width: 100%
+  padding: 5px
+  margin: 5px 0 5px 0
+
+.error
+  box-shadow: inset 0 0 10px #000000
+  background: rgba(255, 0, 0, 0.4)
+  padding: 5px
+  border: solid 2px red
+
 //font styles
 
 body
@@ -57,7 +77,6 @@ header
   clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0)
   -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 100%, 0 100%, 0 0)
   img
-    max-width: 100%
     border-radius: 150px
     margin-top: 70px
   h2
@@ -71,10 +90,14 @@ header
     margin-right: 20px
   .row-content
     padding-top: 100px
+  img
+    width: 100%
 
 #order
   background-color: $avonpink
   color: #fff
+  img
+    width: 100%
   h2
     text-align: center
   .btn
@@ -92,11 +115,18 @@ header
       position: absolute
       top: 0
       left: 0
-  img
-    width: 100%
 
 #contact
   background-color: $lightpink
+  h2
+    font-size: 90px
+    border-bottom: solid 8px
+  .right
+    width: 60%
+    float: right
+  .left
+    width: 30%
+    float: left
 
 footer
   background-color: $peach
