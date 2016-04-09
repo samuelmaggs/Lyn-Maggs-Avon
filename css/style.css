@@ -27,7 +27,7 @@ input, textarea {
 }
 
 body {
-  font-family: 'Metrophobic', Arial, serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: 400;
   color: #333;
 }
@@ -37,7 +37,7 @@ h1 {
 }
 
 h1 span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h2 {
@@ -50,6 +50,7 @@ h3 {
 
 p {
   font-size: 2vw;
+  font-weight: 300;
 }
 
 a:visited {
@@ -64,7 +65,7 @@ a:visited {
 }
 
 .row-content h2 {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 header h1 {
@@ -72,6 +73,22 @@ header h1 {
   text-align: center;
   margin: auto;
   padding: 15px;
+}
+
+header img {
+  position: absolute;
+}
+
+#gloss {
+  top: 0;
+  z-index: -1;
+  transform: rotate(-30deg);
+}
+
+#lipstick {
+  top: 0;
+  z-index: -1;
+  right: 0;
 }
 
 #about {
