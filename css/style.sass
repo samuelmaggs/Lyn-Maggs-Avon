@@ -1,3 +1,8 @@
+//responsive varibles
+
+$tablet: 768px
+$mobile: 414px
+
 //colours
 
 $avonpink: #E30093
@@ -6,6 +11,12 @@ $peach: #FC8B8B
 $greytext: #333
 
 // general global
+#gloss, #lipstick, #powder, #mascara
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -o-user-select: none
+  user-select: none
 
 .main-content
   width: 100%
@@ -79,11 +90,36 @@ header
   top: 0
   z-index: -1
   transform: rotate(-30deg)
+  @media screen and (max-width: $tablet)
+    top: 65px
+    left: -10%
 
 #lipstick
   top: 0
   z-index: -1
   right: 0
+  @media screen and (max-width: $tablet)
+    top: 53px
+    right: -35px
+
+#powder
+  top: -50px
+  right: 18%
+  z-index: -2
+  transform: rotate(-40deg)
+  @media screen and (max-width: $tablet)
+    top: -180px
+    right: 28%
+  @media screen and (max-width: $mobile)
+    display: none
+
+#mascara
+  top: -60px
+  left: 24%
+  z-index: -2
+  transform: rotate(100deg)
+  @media screen and (max-width: $tablet)
+    display: none
 
 #about
   background-color: $lightpink
@@ -94,6 +130,8 @@ header
     margin-top: 70px
   h2
     text-align: left
+  p
+    line-height: 35px
   .right
     width: 70%
     float: right
@@ -137,9 +175,24 @@ header
   .right
     width: 60%
     float: right
+    @media screen and (max-width: $tablet)
+      width: 50%
+    @media screen and (max-width: $mobile)
+      width: 100%
+      float: none
+    img
+      transform: rotate(110deg)
+      @media screen and (max-width: $mobile)
+        display: none
   .left
     width: 30%
     float: left
+    @media screen and (max-width: $tablet)
+      width: 40%
+    @media screen and (max-width: $mobile)
+      width: 90%
+      padding-top: 20px
+      float: none
 
 footer
   background-color: $peach

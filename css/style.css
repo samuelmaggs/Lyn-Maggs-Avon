@@ -1,3 +1,11 @@
+#gloss, #lipstick, #powder, #mascara {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 .main-content {
   width: 100%;
 }
@@ -85,10 +93,57 @@ header img {
   transform: rotate(-30deg);
 }
 
+@media screen and (max-width: 768px) {
+  #gloss {
+    top: 65px;
+    left: -10%;
+  }
+}
+
 #lipstick {
   top: 0;
   z-index: -1;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #lipstick {
+    top: 53px;
+    right: -35px;
+  }
+}
+
+#powder {
+  top: -50px;
+  right: 18%;
+  z-index: -2;
+  transform: rotate(-40deg);
+}
+
+@media screen and (max-width: 768px) {
+  #powder {
+    top: -180px;
+    right: 28%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #powder {
+    display: none;
+  }
+}
+
+#mascara {
+  top: -60px;
+  left: 24%;
+  z-index: -2;
+  transform: rotate(100deg);
+}
+
+@media screen and (max-width: 768px) {
+  #mascara {
+    display: none;
+  }
 }
 
 #about {
@@ -104,6 +159,10 @@ header img {
 
 #about h2 {
   text-align: left;
+}
+
+#about p {
+  line-height: 35px;
 }
 
 #about .right {
@@ -171,9 +230,46 @@ header img {
   float: right;
 }
 
+@media screen and (max-width: 768px) {
+  #contact .right {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #contact .right {
+    width: 100%;
+    float: none;
+  }
+}
+
+#contact .right img {
+  transform: rotate(110deg);
+}
+
+@media screen and (max-width: 414px) {
+  #contact .right img {
+    display: none;
+  }
+}
+
 #contact .left {
   width: 30%;
   float: left;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .left {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #contact .left {
+    width: 90%;
+    padding-top: 20px;
+    float: none;
+  }
 }
 
 footer {
